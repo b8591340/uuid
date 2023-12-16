@@ -92,7 +92,7 @@
     "examples:node:commonjs:test": "cd examples/node-commonjs && npm install && npm test",
     "examples:node:esmodules:test": "cd examples/node-esmodules && npm install && npm test",
     "examples:node:jest:test": "cd examples/node-jest && npm install && npm test",
-    "prepare": "cd $( git rev-parse --show-toplevel ) && husky install",
+    "prepare": "npm run build",
     "lint": "npm run eslint:check && npm run prettier:check",
     "eslint:check": "eslint src/ test/ examples/ *.js",
     "eslint:fix": "eslint --fix src/ test/ examples/ *.js",
